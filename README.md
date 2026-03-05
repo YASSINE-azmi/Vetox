@@ -24,4 +24,4 @@ Ce projet universitaire a été réalisé en collaboration par :
 ## 🚀 Comment lancer le projet localement ?
 1. Cloner ce dépôt sur votre machine :
    ```bash
-   git clone [https://github.com/VOTRE_PSEUDO/Vetox.git](https://github.com/VOTRE_PSEUDO/Vetox.git)
+   git clone https://github.com/YASSINE-azmi/Vetox.git
