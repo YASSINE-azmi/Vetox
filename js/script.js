@@ -441,6 +441,203 @@ const carsData = {
       info3: "💻 Innovision Cockpit", p3: "Tableau de bord digital immersif avec un immense écran d'infodivertissement.",
       info4: "💺 5 Places VIP", p4: "Espace royal pour tous les passagers, matériaux nobles et confort SUV suprême."
     }
+  },
+  "Toyota-Fortuner": {
+    name: "Toyota Fortuner",
+    price: "800 DH / J",
+    image1: "../assets/cars-details/Toyota Fortuner/1.avif",
+    image2: "../assets/cars-details/Toyota Fortuner/2.avif",
+    image3: "../assets/cars-details/Toyota Fortuner/3.avif",
+    image4: "../assets/cars-details/Toyota Fortuner/4.avif",
+    year: "2018",
+    fuel: "Essence",
+    mileage: "80k KM",
+    features: {
+      info1: "🚙 SUV robuste", p1: "Un véhicule solide et polyvalent, parfaitement adapté aux trajets urbains comme aux longues distances.",
+      info2: "⛰️ Garde au sol élevée", p2: "Position de conduite dominante et aisance appréciable sur les routes irrégulières.",
+      info3: "🛡️ Fiabilité Toyota", p3: "Mécanique réputée pour sa durabilité et son entretien relativement simple.",
+      info4: "💺 Habitacle familial", p4: "Intérieur spacieux offrant un bon niveau de confort pour les passagers et les bagages."
+    }
+  },
+
+  "Toyota-Yaris": {
+    name: "Toyota Yaris",
+    price: "600 DH / J",
+    image1: "../assets/cars-details/Toyota Yaris/1.webp",
+    image2: "../assets/cars-details/Toyota Yaris/2.webp",
+    image3: "../assets/cars-details/Toyota Yaris/3.webp",
+    image4: "../assets/cars-details/Toyota Yaris/4.webp",
+    year: "2016",
+    fuel: "Essence",
+    mileage: "170k KM",
+    features: {
+      info1: "🏙️ Compacte urbaine", p1: "Format pratique, idéal pour circuler facilement en ville et stationner sans difficulté.",
+      info2: "⛽ Consommation maîtrisée", p2: "Moteur économique qui permet de réduire le budget carburant au quotidien.",
+      info3: "🛠️ Fiabilité reconnue", p3: "Une citadine réputée pour sa longévité et sa simplicité mécanique.",
+      info4: "💺 Confort quotidien", p4: "Habitacle agréable et bien pensé pour les déplacements réguliers."
+    }
+  },
+
+  "Tesla-Model-S": {
+    name: "Tesla Model S",
+    price: "1400 DH / J",
+    image1: "../assets/cars-details/Tesla Model S/1.avif",
+    image2: "../assets/cars-details/Tesla Model S/2.avif",
+    image3: "../assets/cars-details/Tesla Model S/3.avif",
+    image4: "../assets/cars-details/Tesla Model S/4.avif",
+    year: "2022",
+    fuel: "Electric",
+    mileage: "60k KM",
+    features: {
+      info1: "⚡ Accélération instantanée", p1: "Réactivité impressionnante grâce à une motorisation électrique puissante et fluide.",
+      info2: "🔋 Grande autonomie", p2: "Parfaite pour les longs trajets avec une expérience de conduite moderne et silencieuse.",
+      info3: "💻 Interface high-tech", p3: "Grand écran central, commandes numériques et technologies d'aide à la conduite avancées.",
+      info4: "💺 Berline premium", p4: "Habitacle spacieux, raffiné et confortable pour les voyages comme pour l'usage quotidien."
+    }
+  },
+
+  "BMW-Série-3": {
+    name: "BMW Série 3",
+    price: "1400 DH / J",
+    image1: "../assets/cars-details/BMW Série 3/1.avif",
+    image2: "../assets/cars-details/BMW Série 3/2.avif",
+    image3: "../assets/cars-details/BMW Série 3/3.avif",
+    image4: "../assets/cars-details/BMW Série 3/4.avif",
+    year: "2022",
+    fuel: "Essence",
+    mileage: "60k KM",
+    features: {
+      info1: "🏎️ Conduite précise", p1: "Un comportement routier équilibré offrant un excellent compromis entre confort et sportivité.",
+      info2: "⚡ Motorisation nerveuse", p2: "Moteur essence performant, souple et agréable dans toutes les conditions.",
+      info3: "💻 Système iDrive", p3: "Interface moderne avec commandes intuitives et connectivité complète.",
+      info4: "💺 Finition premium", p4: "Ambiance intérieure soignée avec des matériaux de qualité et un bon confort général."
+    }
+  },
+
+  "Audi-A4": {
+    name: "Audi A4",
+    price: "900 DH / J",
+    image1: "../assets/cars-details/Audi A4/1.avif",
+    image2: "../assets/cars-details/Audi A4/2.avif",
+    image3: "../assets/cars-details/Audi A4/3.avif",
+    image4: "../assets/cars-details/Audi A4/4.avif",
+    year: "2014",
+    fuel: "Essence",
+    mileage: "110k KM",
+    features: {
+      info1: "✨ Élégance allemande", p1: "Design sobre, raffiné et intemporel qui reste très apprécié.",
+      info2: "🛣️ Tenue de route", p2: "Comportement stable et rassurant, aussi agréable en ville que sur autoroute.",
+      info3: "💻 Cockpit moderne", p3: "Poste de conduite bien organisé avec équipements pratiques et bonne ergonomie.",
+      info4: "💺 Confort haut de gamme", p4: "Suspensions équilibrées et habitacle silencieux pour des trajets agréables."
+    }
+  },
+
+  "dacia-Sandero": {
+    name: "Dacia Sandero",
+    price: "500 DH / J",
+    image1: "../assets/cars-details/Dacia Sandero/1.webp",
+    image2: "../assets/cars-details/Dacia Sandero/2.webp",
+    image3: "../assets/cars-details/Dacia Sandero/3.webp",
+    image4: "../assets/cars-details/Dacia Sandero/4.webp",
+    year: "2018",
+    fuel: "Essence",
+    mileage: "180k KM",
+    features: {
+      info1: "💰 Excellent rapport qualité-prix", p1: "Une voiture simple, pratique et accessible, parfaite pour la location quotidienne.",
+      info2: "🛠️ Entretien facile", p2: "Mécanique connue pour être simple et économique à maintenir.",
+      info3: "⛽ Sobriété", p3: "Consommation raisonnable pour limiter les dépenses sur les trajets réguliers.",
+      info4: "💺 Polyvalence", p4: "Habitacle fonctionnel et coffre pratique pour une utilisation familiale ou urbaine."
+    }
+  },
+
+  "honda-Accord": {
+    name: "Honda Accord",
+    price: "700 DH / J",
+    image1: "../assets/cars-details/Honda Accord/1.avif",
+    image2: "../assets/cars-details/Honda Accord/2.avif",
+    image3: "../assets/cars-details/Honda Accord/3.avif",
+    image4: "../assets/cars-details/Honda Accord/4.avif",
+    year: "2016",
+    fuel: "Essence",
+    mileage: "112k KM",
+    features: {
+      info1: "🚘 Berline spacieuse", p1: "Très bon espace intérieur pour offrir un excellent confort à bord.",
+      info2: "🛡️ Fiabilité Honda", p2: "Un modèle reconnu pour sa durabilité et sa qualité de fabrication.",
+      info3: "⚙️ Conduite souple", p3: "Motorisation agréable et comportement routier stable pour les longs trajets.",
+      info4: "💺 Confort routier", p4: "Sièges confortables et ambiance sereine pour les déplacements du quotidien."
+    }
+  },
+
+  "Jeep-Meridian": {
+    name: "Jeep Meridian",
+    price: "1200 DH / J",
+    image1: "../assets/cars-details/Jeep Meridian/1.avif",
+    image2: "../assets/cars-details/Jeep Meridian/2.avif",
+    image3: "../assets/cars-details/Jeep Meridian/3.avif",
+    image4: "../assets/cars-details/Jeep Meridian/4.avif",
+    year: "2019",
+    fuel: "Essence",
+    mileage: "178k KM",
+    features: {
+      info1: "🚙 SUV statutaire", p1: "Présence imposante, style affirmé et conduite surélevée très appréciable.",
+      info2: "🛣️ Polyvalence", p2: "Adapté aux longs trajets, aux routes variées et à une utilisation familiale.",
+      info3: "🛡️ Conduite rassurante", p3: "Bonne stabilité et sensation de sécurité grâce à son gabarit de SUV.",
+      info4: "💺 Habitacle généreux", p4: "Espace intérieur confortable avec une bonne capacité pour les passagers et les bagages."
+    }
+  },
+
+  "opel-Corsa": {
+    name: "Opel Corsa",
+    price: "600 DH / J",
+    image1: "../assets/cars-details/Opel Corsa/1.webp",
+    image2: "../assets/cars-details/Opel Corsa/2.webp",
+    image3: "../assets/cars-details/Opel Corsa/3.webp",
+    image4: "../assets/cars-details/Opel Corsa/4.webp",
+    year: "2021",
+    fuel: "Diesel",
+    mileage: "89k KM",
+    features: {
+      info1: "🏙️ Citadine agile", p1: "Parfaite pour les déplacements urbains grâce à sa maniabilité et son gabarit compact.",
+      info2: "⛽ Diesel économique", p2: "Consommation réduite idéale pour les conducteurs qui roulent souvent.",
+      info3: "💻 Équipements modernes", p3: "Écran tactile, connectivité utile et commandes simples au quotidien.",
+      info4: "💺 Confort pratique", p4: "Un intérieur fonctionnel, confortable et adapté à un usage journalier."
+    }
+  },
+
+  "peugeot-3008": {
+    name: "Peugeot 3008",
+    price: "1100 DH / J",
+    image1: "../assets/cars-details/peugeot 3008/1.webp",
+    image2: "../assets/cars-details/peugeot 3008/2.webp",
+    image3: "../assets/cars-details/peugeot 3008/3.webp",
+    image4: "../assets/cars-details/peugeot 3008/4.webp",
+    year: "2024",
+    fuel: "Diesel",
+    mileage: "70k KM",
+    features: {
+      info1: "✨ SUV moderne", p1: "Design extérieur élégant et intérieur très travaillé avec une vraie montée en gamme.",
+      info2: "⛽ BlueHDi efficient", p2: "Motorisation diesel adaptée aux longs trajets avec une consommation maîtrisée.",
+      info3: "💻 Peugeot i-Cockpit", p3: "Poste de conduite technologique avec instrumentation moderne et écran central réactif.",
+      info4: "💺 Confort familial", p4: "Espace intérieur agréable, bonne modularité et coffre pratique pour les voyages."
+    }
+  },
+
+  "skoda-Kodiaq": {
+    name: "Skoda Kodiaq",
+    price: "1100 DH / J",
+    image1: "../assets/cars-details/Skoda Kodiaq/1.avif",
+    image2: "../assets/cars-details/Skoda Kodiaq/2.avif",
+    image3: "../assets/cars-details/Skoda Kodiaq/3.avif",
+    image4: "../assets/cars-details/Skoda Kodiaq/4.avif",
+    year: "2020",
+    fuel: "Diesel",
+    mileage: "98k KM",
+    features: {
+      info1: "🚙 Grand SUV", p1: "Format généreux offrant une excellente habitabilité et une forte présence sur la route.",
+      info2: "⛽ Diesel routier", p2: "Très bon choix pour les longues distances grâce à son efficacité et son autonomie.",
+      info3: "🛡️ Aides à la conduite", p3: "Équipements modernes pour améliorer la sécurité et le confort de conduite.",
+      info4: "💺 Espace remarquable", p4: "Habitacle vaste et coffre généreux, parfait pour les familles et les bagages."
+    }
   }
 };
 
