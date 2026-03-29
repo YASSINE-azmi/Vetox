@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vetox - Catalogue</title>
+  <link rel="stylesheet" href="../css/style-cars.css">
+  <script src="../js/script.js"></script>
+  <!-- imprt fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar div for css -->
+  <header id="navbar">
+    <div class="logo-navbar">
+      <a href="index.html" class="navbar-logo">
+        <img src="../assets/Logo/Vetox-light.svg" alt="Vetox Logo" class="logo-light">
+        <img src="../assets/Logo/Vetox-dark.svg" alt="Vetox Logo" class="logo-dark">
+      </a>
+    </div>
+
+    <div class="links-navbar" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="cars.html">Catalogue</a>
+      <a href="index.html#Pourquoi">À propos</a>
+      <a href="contact.html">Contact</a>
+
+      <button id="theme-toggle" class="theme-btn">
+        <img src="../assets/icons/darck-icon.svg" alt="Dark Mode" id="icon-moon">
+        <img src="../assets/icons/light-icon.svg" alt="Light Mode" id="icon-sun">
+      </button>
+    </div>
+
+    <div class="icon-navbar">
+      <div class="hamburger" id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <!-- Ux -->
+    <div id="Ux">
+      <a href="index.html" id="a">Accueil</a> <span>></span> <a href="cars.html" id="c">Catalogue</a>
+    </div>
+
+    <!--center the serch bar -->
+
+    <div id="search__bar">
+      <section class="filters">
+
+        <!--Marque option-->
+        <select>
+          <option>Marque</option>
+          <option>Mercedes</option>
+          <option>Tesla</option>
+          <option>Volkswagen</option>
+          <option>Audi</option>
+          <option>Bmw</option>
+          <option>Skoda</option>
+          <option>Dacia</option>
+          <option>Honda</option>
+          <option>Toyota</option>
+          <option>Opel</option>
+          <option>Peugeot</option>
+
+        </select>
+
+        <!--type de carburant option-->
+        <select>
+          <option>Type de carburant</option>
+          <option>Diesel</option>
+          <option>Essence</option>
+          <option>Electrique</option>
+
+        </select>
+
+        <!--bufget option-->
+        <select>
+          <option>Budget Max</option>
+          <option>400 DH</option>
+          <option>500 DH</option>
+          <option>600 DH</option>
+          <option>700 DH</option>
+          <option>800 DH</option>
+          <option>900 DH</option>
+          <option>1000 DH</option>
+          <option>1100 DH</option>
+          <option>1200 DH</option>
+          <option>1300 DH</option>
+          <option>1500 DH</option>
+
+
+        </select>
+
+        <button class="search">Rechercher</button>
+
+      </section>
+    </div>
+
+
+    <!-- 1 card-->
+    <section class="cars">
+      <a href="car-details.html?id=audi-rs7" class="card" data-marque="Audi" data-carburant="Essence" data-prix="1500">
+        <img src="../assets/cars-details/Audi rs7/1.jpeg" alt="Audi rs7">
+        <h3>Audi rs7</h3>
+        <div class="tags">
+          <span>2017</span>
+          <span>Essence</span>
+          <span>150k KM</span>
+        </div>
+        <p class="price">1500 DH / J</p>
+      </a>
+
+      <!-- 2 card-->
+      <a href="car-details.html?id=bmw-m5" class="card" data-marque="Bmw" data-carburant="Essence" data-prix="1300">
+        <img src="../assets/cars-details/Bmw m5/1.jpeg" alt="BMW M5">
+        <h3>BMW M5</h3>
+        <div class="tags">
+          <span>2015</span>
+          <span>Essence</span>
+          <span>180k KM</span>
+        </div>
+        <p class="price">1300 DH / J</p>
+      </a>
+
+      <!-- 3 card-->
+      <a href="car-details.html?id=dacia-logan" class="card" data-marque="Dacia" data-carburant="Essence"
+        data-prix="400">
+        <img src="../assets/cars-details/Dacia logan/1.jpeg" alt="Dacia Logan">
+        <h3>Dacia Logan</h3>
+        <div class="tags">
+          <span>2019</span>
+          <span>Essence</span>
+          <span>150k KM</span>
+        </div>
+        <p class="price">400 DH / J</p>
+      </a>
+
+      <!-- 4 card-->
+      <a href="car-details.html?id=honda-civic" class="card" data-marque="Honda" data-carburant="Essence"
+        data-prix="900">
+        <img src="../assets/cars-details/Honda Civic Hatchback 2017/1.jpg" alt="Honda Civic">
+        <h3>Honda Civic Hatchback</h3>
+        <div class="tags">
+          <span>2017</span>
+          <span>Essence</span>
+          <span>167k KM</span>
+        </div>
+        <p class="price">900 DH / J</p>
+      </a>
+
+      <!-- 5 card-->
+      <a href="car-details.html?id=mercedes-c-class" class="card" data-marque="Mercedes" data-carburant="Essence"
+        data-prix="1300">
+        <img src="../assets/cars-details/Mercedes c class/1.jpeg" alt="Mercedes C Class">
+        <h3>Mercedes C Class</h3>
+        <div class="tags">
+          <span>2020</span>
+          <span>Essence</span>
+          <span>118k KM</span>
+        </div>
+        <p class="price">1300 DH / J</p>
+      </a>
+
+      <!-- 6 card-->
+      <a href="car-details.html?id=opel-astra" class="card" data-marque="Opel" data-carburant="Diesel" data-prix="700">
+        <img src="../assets/cars-details/Opel Astra GS Line Diesel 2025/1.jpg" alt="Opel Astra">
+        <h3>Opel Astra GS Line</h3>
+        <div class="tags">
+          <span>2025</span>
+          <span>Diesel</span>
+          <span>69k KM</span>
+        </div>
+        <p class="price">700 DH / J</p>
+      </a>
+
+      <!-- 7 card-->
+      <a href="car-details.html?id=peugeot-208" class="card" data-marque="Peugeot" data-carburant="Diesel"
+        data-prix="400">
+        <img src="../assets/cars-details/Peugeot 208/1.jpeg" alt="Peugeot 208">
+        <h3>Peugeot 208</h3>
+        <div class="tags">
+          <span>2021</span>
+          <span>Diesel</span>
+          <span>120k KM</span>
+        </div>
+        <p class="price">400 DH / J</p>
+      </a>
+
+      <!-- 8 card-->
+      <a href="car-details.html?id=vw-polo" class="card" data-marque="Volkswagen" data-carburant="Diesel"
+        data-prix="500">
+        <img src="../assets/cars-details/Polo diesel 2014/1.jpeg" alt="Polo">
+        <h3>Volkswagen Polo</h3>
+        <div class="tags">
+          <span>2014</span>
+          <span>Diesel</span>
+          <span>199k KM</span>
+        </div>
+        <p class="price">500 DH / J</p>
+      </a>
+
+      <!-- 9 card-->
+      <a href="car-details.html?id=skoda-octavia" class="card" data-marque="Skoda" data-carburant="Diesel"
+        data-prix="900">
+        <img src="../assets/cars-details/Skoda octavia/1.jpeg" alt="Skoda Octavia">
+        <h3>Skoda Octavia</h3>
+        <div class="tags">
+          <span>2022</span>
+          <span>Diesel</span>
+          <span>90k KM</span>
+        </div>
+        <p class="price">900 DH / J</p>
+      </a>
+
+      <!-- 10 card-->
+      <a href="car-details.html?id=tesla-model3" class="card" data-marque="Tesla" data-carburant="Electrique"
+        data-prix="1300">
+        <img src="../assets/cars-details/Tesla model 3/1.jpeg" alt="Tesla">
+        <h3>Tesla Model 3</h3>
+        <div class="tags">
+          <span>2021</span>
+          <span>Electrique</span>
+          <span>98k KM</span>
+        </div>
+        <p class="price">1300 DH / J</p>
+      </a>
+
+      <!-- 11 card-->
+      <a href="car-details.html?id=toyota-corolla" class="card" data-marque="Toyota" data-carburant="Essence"
+        data-prix="400">
+        <img src="../assets/cars-details/Toyota corolla/1.jpeg" alt="Toyota">
+        <h3>Toyota Corolla</h3>
+        <div class="tags">
+          <span>2019</span>
+          <span>Essence</span>
+          <span>40k KM</span>
+        </div>
+        <p class="price">400 DH / J</p>
+      </a>
+
+      <!-- 12 card-->
+      <a href="car-details.html?id=vw-touareg" class="card" data-marque="Volkswagen" data-carburant="Essence"
+        data-prix="1400">
+        <img src="../assets/cars-details/Volkswagen Touareg/1.jpeg" alt="Touareg">
+        <h3>Volkswagen Touareg</h3>
+        <div class="tags">
+          <span>2024</span>
+          <span>Essence</span>
+          <span>70k KM</span>
+        </div>
+        <p class="price">1400 DH / J</p>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- div footer for css -->
+  <footer id="footer">
+    <div class="footer-container">
+      <!-- about countainer -->
+      <div class="footer-col brand-col">
+        <!-- Vetox footer logo-->
+        <img src="../assets/Logo/Vetox-dark.svg" alt="Vetox Logo" class="logo-footer">
+        <!-- about Vetox -->
+        <p>Votre partenaire de confiance pour <br> trouver la voiture idéale au meilleur <br> prix.</p>
+      </div>
+
+      <!--link footer countainer -->
+      <div class="footer-col links-col">
+        <!-- links title -->
+        <h3>Liens Utiles</h3>
+        <!-- links -->
+        <div class="links-footer">
+          <a href="index.html">Accueil</a>
+          <a href="cars.html">Catalogue</a>
+          <a href="index.html#Pourquoi">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <!--information countainer-->
+      <div class="footer-col contact-col">
+        <!--title of information-->
+        <h3>Contactez-nous</h3>
+        <!--information-->
+        <p>Ait Melloul, Agadir, Maroc</p>
+        <p>+212 6 00 00 00 00</p>
+        <p>contact@vetox.ma</p>
+      </div>
+
+      <!--Social media countainer-->
+      <div class="footer-col social-col">
+        <!--title of social media-->
+        <h3>Suivez-nous</h3>
+        <!--social media icons-->
+        <div class="social-icons">
+          <a href="#"><img src="../assets/icons/facebook.png" alt="facebook"></a>
+          <a href="#"><img src="../assets/icons/phone.png" alt="Num"></a>
+          <a href="#"><img src="../assets/icons/youtube.png" alt="youtube"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--copy rights section-->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vetox. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

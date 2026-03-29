@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BASE THEME (Light & Dark)
+   ========================================= */
+
+/* Light Mode (Default) */
+body {
+  background-color: #F8F9FA;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #0F172A;
+  color: #F8F9FA;
+}
+
+/* Cartes */
+body.dark-mode .contact-info,
+body.dark-mode .contact-form {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* Inputs */
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* Informations */
+body.dark-mode .info-item {
+  background: #2a2a2a;
+  border: 1px solid #444;
+}
+
+/* TITRE PRINCIPAL */
+body.dark-mode .contact-section h1 {
+  color: #ffffff;
+}
+
+/* SOUS-TEXTE */
+body.dark-mode .contact-section p {
+  color: #aaaaaa;
+}
+
+/* TITRES DES CARTES */
+body.dark-mode .contact-info h2,
+body.dark-mode .contact-form h2 {
+  color: #ffffff;
+}
+
+/* TEXTE DANS LES BLOCS INFO (adresse, téléphone...) */
+body.dark-mode .info-item {
+  color: #dddddd;
+  background: #2a2a2a;
+  border: 1px solid #444;
+}
+
+/* INPUTS */
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* PLACEHOLDER */
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+  color: #bbbbbb;
+}
+
+/* BOUTON */
+body.dark-mode .contact-form button {
+  color: white;
+}
+
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px #0000000D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-navbar {
+  position: absolute;
+  left: 5%;
+}
+
+#theme-toggle {
+  position: absolute;
+  right: 5%;
+}
+
+/* Hide hamburger container on desktop */
+.icon-navbar {
+  display: none;
+}
+
+body.dark-mode #navbar {
+  background-color: #1E1E1E;
+  color: #F8F9FA;
+}
+
+/* Navbar Links */
+.links-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.links-navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.links-navbar a:hover {
+  color: #E63946;
+}
+
+
+/* =========================================
+   HAMBURGER BUTTON (Hidden by default)
+   ========================================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+
+  /* The magic lines to fix stacking issues */
+  position: relative;
+  z-index: 9999;
+  /* High z-index to ensure it appears above the menu and other elements */
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #111;
+  /* Uses a variable if available, otherwise defaults to black */
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .hamburger .line {
+  background-color: #F8F9FA;
+  /* Light white color matching the dark theme design */
+}
+
+/* Hamburger to (X) Animation */
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+  /* Hide the middle line */
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================================
+   THEME TOGGLE LOGIC (Light/Dark Mode Icons)
+   ========================================= */
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.theme-btn img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Light Mode (Default) Icons */
+.logo-dark,
+#icon-sun {
+  display: none;
+}
+
+.logo-light,
+#icon-moon {
+  display: block;
+}
+
+/* Dark Mode Icons (Active) */
+body.dark-mode .logo-light,
+body.dark-mode #icon-moon {
+  display: none;
+}
+
+body.dark-mode .logo-dark,
+body.dark-mode #icon-sun {
+  display: block;
+}
+
+/* =========================================
+                  (Footer)
+   ========================================= */
+
+/* footer design nad padding*/
+#footer {
+  background-color: #111827;
+  color: #9CA3AF;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 60px;
+}
+
+/* Dark mode footer*/
+body.dark-mode #footer {
+  color: #9CA3AF;
+  background-color: #121212;
+
+}
+
+.logo-footer {
+  margin-bottom: 15px;
+}
+
+/* footer countainer (Num = 4) */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 5% 40px 5%;
+}
+
+/* align countainer */
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* footer title */
+.footer-col h3 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* align paragraph in footer */
+.footer-col p {
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* align footer link */
+.links-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* footer link design */
+.footer-col a {
+  color: #9CA3AF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* footer link animation */
+.footer-col a:hover {
+  color: #E63946;
+}
+
+/* align footer social icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* footer socail icons design */
+.social-icons img {
+  width: 38px;
+  height: 38px;
+  transition: transform 0.3s ease;
+}
+
+/* footer socail icons effect */
+.social-icons img:hover {
+  transform: translateY(-5px);
+}
+
+/* footer copy right*/
+
+/*lign*/
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 25px 0;
+}
+
+/*text*/
+.footer-bottom p {
+  margin: 0;
+  font-size: 13px;
+}
+
+
+/* =========================================
+                  (Contact)
+   ========================================= */
+
+
+/* Section principale */
+.contact-section {
+  text-align: center;
+  padding: 120px 20px 40px;
+
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-section p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cartes */
+.contact-info,
+.contact-form {
+
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Titres */
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Informations */
+.info-item {
+  background: #f9f9f9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+  border: 1px solid #eee;
+}
+
+/* Formulaire */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #e63946;
+}
+
+/* Bouton */
+.contact-form button {
+  background: #e63946;
+
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #c62834;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+
+/* Responsive - 992px and below */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 90%;
+  }
+
+  /* --- Navbar --- */
+  #navbar {
+    justify-content: space-between;
+  }
+
+  .logo-navbar,
+  #theme-toggle {
+    position: static;
+  }
+
+  .icon-navbar {
+    display: flex;
+    z-index: 9999;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links-navbar {
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--bg-color, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+  }
+
+  .links-navbar.active {
+    right: 0;
+  }
+
+  body.dark-mode .links-navbar {
+    background-color: #1E1E1E;
+    color: #ffffff;
+  }
+}
+
+/* Responsive - 600px and below */
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 95%;
+  }
+
+  .contact-section h1 {
+    font-size: 28px;
+  }
+
+  .links-navbar {
+    width: 220px;
+    gap: 40px;
+  }
+}

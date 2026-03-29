@@ -1,0 +1,626 @@
+/* =========================================
+   GLOBAL RESET
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BASE THEME (Light & Dark)
+   ========================================= */
+
+/* Light Mode (Default) */
+body {
+  background-color: #F8F9FA;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #0F172A;
+  color: #F8F9FA;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px #0000000D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-navbar {
+  position: absolute;
+  left: 5%;
+}
+
+#theme-toggle {
+  position: absolute;
+  right: 5%;
+}
+
+/* Hide hamburger container on desktop */
+.icon-navbar {
+  display: none;
+}
+
+body.dark-mode #navbar {
+  background-color: #1E1E1E;
+  color: #F8F9FA;
+}
+
+/* Navbar Links */
+.links-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.links-navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.links-navbar a:hover {
+  color: #E63946;
+}
+
+/* =========================================
+   HAMBURGER BUTTON (Hidden by default)
+   ========================================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 9999;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #111;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .hamburger .line {
+  background-color: #F8F9FA;
+}
+
+/* Hamburger to (X) Animation */
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================================
+   THEME TOGGLE LOGIC (Light/Dark Mode Icons)
+   ========================================= */
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-btn img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Light Mode (Default) Icons */
+.logo-dark,
+#icon-sun {
+  display: none;
+}
+
+.logo-light,
+#icon-moon {
+  display: block;
+}
+
+/* Dark Mode Icons (Active) */
+body.dark-mode .logo-light,
+body.dark-mode #icon-moon {
+  display: none;
+}
+
+body.dark-mode .logo-dark,
+body.dark-mode #icon-sun {
+  display: block;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+/* Footer Main Design */
+#footer {
+  background-color: #111827;
+  color: #9CA3AF;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 60px;
+}
+
+/* Footer Dark Mode */
+body.dark-mode #footer {
+  background-color: #121212;
+  color: #9CA3AF;
+}
+
+.logo-footer {
+  margin-bottom: 15px;
+}
+
+/* Footer Container Grid */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 5% 40px 5%;
+}
+
+/* Footer Columns */
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Footer Titles */
+.footer-col h3 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Footer Paragraphs */
+.footer-col p {
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Footer Links Container */
+.links-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Footer Links Style */
+.footer-col a {
+  color: #9CA3AF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Footer Links Hover */
+.footer-col a:hover {
+  color: #E63946;
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Social Icons Size & Transition */
+.social-icons img {
+  width: 38px;
+  height: 38px;
+  transition: transform 0.3s ease;
+}
+
+/* Social Icons Hover Effect */
+.social-icons img:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer Copyright Bottom Line */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 25px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* =========================================
+   SEARCH BAR SECTION
+   ========================================= */
+
+/* Search Bar Outer Container */
+#search__bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+/* Main Filters Box */
+.filters {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px 35px;
+  border-radius: 20px;
+  box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dropdown Menus */
+.filters select {
+  flex: 1;
+  border: none;
+  background-color: #F8F9FA;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  appearance: none;
+  /* Hides the default browser arrow */
+  background-image: url("../assets/icons/search.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  transition: all 0.3s ease;
+}
+
+.filters select:focus {
+  outline: 2px solid #E63946;
+}
+
+/* Search Button */
+.filters .search {
+  background-color: #E63946;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 40px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.filters .search:hover {
+  background-color: #C1121F;
+  transform: scale(1.03);
+}
+
+/* UX Margin */
+#Ux {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-left: 95px;
+  padding-top: 95px;
+  font-size: 14px;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+#Ux a {
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#Ux a:hover {
+  color: #E63946;
+}
+
+/* Dark Mode for Search Bar */
+body.dark-mode .filters {
+  background-color: #1E1E1E;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* =========================================
+   CARS LAYOUT (GRID & FLEX)
+   ========================================= */
+
+
+
+/* Grid container to display 3 cars per row */
+.cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   CAR CARD DESIGN
+   ========================================= */
+
+/* Main Card Body */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cars a {
+  text-decoration: none;
+}
+
+/* Card Hover Animation */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: #9CA3AF;
+}
+
+/* Car Image */
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+/* Image Zoom on Card Hover */
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* Car Title */
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 15px 0;
+}
+
+/* Tags Container  */
+.card .tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Individual Tag Style */
+.card .tags span {
+  background-color: #BAC1C8;
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tag Hover Effect */
+.card .tags span:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Car Price */
+.card .price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #000000;
+  margin: 0;
+}
+
+/* =========================================
+   CATALOGUE SECTIONS
+   ========================================= */
+
+.catalogue-sections {
+  max-width: 1100px;
+  margin: 20px auto 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catalogue-section {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-toggle {
+  width: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+  cursor: pointer;
+  text-align: left;
+}
+
+.section-arrow {
+  font-size: 28px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.catalogue-section.open .section-arrow {
+  transform: rotate(45deg);
+}
+
+.section-cars {
+  display: none;
+}
+
+.catalogue-section.open .section-cars {
+  display: grid;
+}
+
+.catalogue-section .cars {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+body.dark-mode .catalogue-section {
+  background-color: #1E1E1E;
+  border-color: #374151;
+}
+
+body.dark-mode .section-toggle {
+  color: #F8F9FA;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* (Tablets) - Screens smaller than 992px */
+@media (max-width: 992px) {
+  #navbar {
+    justify-content: space-between;
+  }
+
+  .logo-navbar,
+  #theme-toggle {
+    position: static;
+  }
+
+  .icon-navbar {
+    display: flex;
+    z-index: 9999;
+  }
+
+  /* --- Navbar --- */
+  .hamburger {
+    display: flex;
+  }
+
+  .links-navbar {
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--bg-color, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+  }
+
+  .links-navbar.active {
+    right: 0;
+  }
+
+  body.dark-mode .links-navbar {
+    background-color: #1E1E1E;
+    color: #ffffff;
+  }
+
+  /* --- UX --- */
+  #Ux {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-top: 110px;
+  }
+
+
+}
+
+/* (Mobile Phones) - Screens smaller than 600px */
+@media (max-width: 600px) {
+
+  /* --- Search Bar --- */
+  #search__bar {
+    margin-top: -30px;
+    padding: 15px;
+  }
+
+  .filters {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .filters select,
+  .filters .search {
+    width: 100%;
+  }
+
+  /* --- Cars Grid --- */
+  .cars {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Footer --- */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
