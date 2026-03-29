@@ -38,4 +38,4 @@ This university project was carried out collaboratively by:
 ## 🚀 How to Run the Project Locally
 1. Clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/YASSINE-azmi/Vetox.git](https://github.com/YASSINE-azmi/Vetox.git)
+   git clone https://github.com/YASSINE-azmi/Vetox.git
