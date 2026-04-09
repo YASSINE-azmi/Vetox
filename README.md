@@ -41,7 +41,5 @@ This university project was carried out collaboratively by:
    git clone https://github.com/YASSINE-azmi/Vetox.git
 
 ## 🚀 Try Vetow
-1. Clone this repository to your local machine:
-   ```bash
    vetox.yassine.work
   
