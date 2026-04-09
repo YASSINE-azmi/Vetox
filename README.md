@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/readme/Frame 11.png" alt="Vetox Logo" width="1000">
   
-  <h3><a href="https://www.vetox.yassine.work" target="_blank">Vetox | Elevate Your Drive</a></h3>
+  <h3><a href="https://vetox.yassine.work/" target="_blank">Vetox | Elevate Your Drive</a></h3>
   
   <p>A modern, premium car rental web platform based in the Souss-Massa region.</p>
 </div>
@@ -40,5 +40,5 @@ This university project was carried out collaboratively by:
    ```bash
    git clone https://github.com/YASSINE-azmi/Vetox.git
 
-## <a href="https://www.vetox.yassine.work" target="_blank">🚀 Try Vetox</a>
+## <a href="https://vetox.yassine.work/" target="_blank">🚀 Try Vetox</a>
   
